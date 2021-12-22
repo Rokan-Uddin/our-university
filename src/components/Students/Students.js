@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Student from '../Student/Student';
 
 const Students = () => {
     const [students,setStudents]=useState([]);
@@ -9,10 +10,15 @@ const Students = () => {
     },[])
     
     return (
-        <div>
-            {
-                <h1>{students.length}</h1>
-            }
+        <div className='container'>
+            <div className='row g-4'>
+                {
+                    students.map(student=><Student
+                    key={student._id}
+                    student={student}
+                    ></Student>)
+                }
+            </div>
         </div>
     );
 };
