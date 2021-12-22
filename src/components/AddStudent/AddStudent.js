@@ -6,7 +6,6 @@ const AddStudent = () => {
   const onSubmit = data => {
       axios.post("https://sheltered-crag-88066.herokuapp.com/addstudent",data)
       .then(res=>{
-          console.log(res);
       })
   };
     return (
