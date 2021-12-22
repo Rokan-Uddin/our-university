@@ -1,14 +1,20 @@
-import './App.css';
-import Footer from './components/Footer/Footer';
-import Header from './components/Header/Header';
-import Students from './components/Students/Students';
-
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.css";
+import AddStudent from "./components/AddStudent/AddStudent";
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
+import Students from "./components/Students/Students";
 function App() {
   return (
     <div className="App">
-      <Header></Header>
-      <Students></Students>
-      <Footer></Footer>
+      <BrowserRouter>
+        <Header></Header>
+        <Routes>
+          <Route path="/addstudent" element={<AddStudent />} />
+          <Route path="/" element={<Students />} />
+        </Routes>
+        <Footer></Footer>
+      </BrowserRouter>
     </div>
   );
 }
