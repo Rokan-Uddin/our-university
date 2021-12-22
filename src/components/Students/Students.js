@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { PropagateLoader } from 'react-spinners';
 import Student from '../Student/Student';
 
 const Students = () => {
@@ -10,7 +11,10 @@ const Students = () => {
     },[])
     
     return (
-        <div className='container'>
+        <div className='container mt-5'>
+            {
+                students.length===0 && <PropagateLoader color='blue' size={15} />
+            }
             <div className='row g-4'>
                 {
                     students.map(student=><Student

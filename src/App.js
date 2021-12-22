@@ -1,7 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import AddStudent from "./components/AddStudent/AddStudent";
-import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Students from "./components/Students/Students";
 function App() {
@@ -13,7 +12,7 @@ function App() {
           <Route path="/addstudent" element={<AddStudent />} />
           <Route path="/" element={<Students />} />
         </Routes>
-        <Footer></Footer>
+        {/* <Footer></Footer> */}
       </BrowserRouter>
     </div>
   );
