@@ -1,3 +1,6 @@
+.stduent-list {
+}
 .student-list:hover {
   cursor: pointer;
+  background-color: #c1afdb !important;
 }

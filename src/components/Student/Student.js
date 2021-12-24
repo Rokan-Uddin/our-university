@@ -7,8 +7,8 @@ const Student = ({student}) => {
         navigate(`/details/${student._id}`);
     }
     return (
-        <div className='col-lg-3'>
-            <div onClick={handleClick} className='shadow-lg bg-body rounded student-list'>
+        <div className='col-lg-3 '>
+            <div onClick={handleClick} className='shadow-lg bg-body rounded student-list p-1'>
                 <p>{student.name}</p>
                 <p>{student.dept}</p>
             </div>

@@ -1,3 +1,9 @@
-.modal {
-  width: 50px;
+.item {
+  display: block;
+}
+.studentName {
+  color: #0f16d6;
+}
+.deptName {
+  color: #ed6707;
 }
